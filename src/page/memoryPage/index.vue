@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <div class="caret-wrapper">
+    <div class="caret-wrapper" v-if="route.query.gameConsoleId === '1'">
       <div class="title">
-        <p>固定游戏目录</p>
+        <p>PS4游戏目录</p>
         <div class="line"></div>
       </div>
       <div class="btn-group">
@@ -19,7 +19,7 @@
     </div>
     <div class="caret-wrapper top_1em">
       <div class="title">
-        <p>自选游戏目录</p>
+        <p>PS5游戏目录</p>
         <div class="line"></div>
       </div>
       <div class="btn-group">
@@ -38,61 +38,20 @@
 </template>
 
 <script setup>
-import {useRouter} from 'vue-router'
+import {ref} from "vue";
+import {useRouter, useRoute} from 'vue-router'
+import {onMounted} from "vue";
 
 const router = useRouter()
+const route = useRoute()
+
+const gameConsoleId = ref(null)
 
 // 固定游戏目录
-const hard_disk_fixed = [
-  {
-    id: 1,
-    name: '500G自选'
-  },
-  {
-    id: 2,
-    name: '1T自选'
-  },
-  {
-    id: 3,
-    name: '2T自选'
-  },
-  {
-    id: 4,
-    name: '4T自选'
-  },
-  {
-    id: 5,
-    name: '8T自选'
-  },
-]
+let hard_disk_fixed = ref([])
 
 // 自选游戏目录
-const hard_disk_choose = [
-  {
-    id: 5,
-    name: '1T + 4T自选'
-  },
-  {
-    id: 6,
-    name: '1T + 8T自选'
-  },
-  {
-    id: 7,
-    name: '2T + 4T自选'
-  },
-  {
-    id: 8,
-    name: '2T + 8T自选'
-  },
-  {
-    id: 9,
-    name: '500G + 4T自选'
-  },
-  {
-    id: 10,
-    name: '500G + 8T自选'
-  },
-]
+let hard_disk_choose = ref([])
 
 defineProps({
   msg: String,
@@ -100,8 +59,94 @@ defineProps({
 
 const goSelectPage = (item) => {
   // 跳转路由转选择游戏页面
-  router.push({name: 'SelectGame', query: {id: item.id}})
+  router.push({name: 'SelectGame', query: {gameConsoleId: gameConsoleId.value, memoryId: item.id}})
 }
+
+const handleSelectDisk = () => {
+  switch (gameConsoleId.value) {
+    case '1':
+      hard_disk_fixed.value = [
+        {
+          id: 1,
+          name: '500G自选'
+        },
+        {
+          id: 2,
+          name: '1T自选'
+        },
+        {
+          id: 3,
+          name: '2T自选'
+        },
+        {
+          id: 4,
+          name: '4T自选'
+        },
+        {
+          id: 5,
+          name: '8T自选'
+        },
+        {
+          id: 6,
+          name: '1T + 4T自选'
+        },
+        {
+          id: 7,
+          name: '1T + 8T自选'
+        },
+        {
+          id: 8,
+          name: '2T + 4T自选'
+        },
+        {
+          id: 9,
+          name: '2T + 8T自选'
+        },
+        {
+          id: 10,
+          name: '500G + 4T自选'
+        },
+        {
+          id: 11,
+          name: '500G + 8T自选'
+        }
+      ]
+      hard_disk_choose.value = [
+        {
+          id: 12,
+          name: '825G自选'
+        },
+        {
+          id: 13,
+          name: '1T自选'
+        }
+      ]
+      break;
+      // ps5
+    case '2':
+      hard_disk_fixed.value = []
+      hard_disk_choose.value = [
+        {
+          id: 1,
+          name: '1T自选'
+        },
+        {
+          id: 2,
+          name: '2T自选'
+        }
+      ]
+      break;
+  }
+}
+
+onMounted(() => {
+  if (route.query.gameConsoleId == null) {
+    router.push({name: 'HostSelection'})
+  } else {
+    gameConsoleId.value = route.query.gameConsoleId
+    handleSelectDisk()
+  }
+})
 
 </script>
 
@@ -151,6 +196,10 @@ const goSelectPage = (item) => {
         margin-right: 1.5vw;
         margin-bottom: 2em;
         cursor: pointer;
+
+        &:hover {
+          background: rgba(27, 25, 25, 0.45);
+        }
       }
 
       .btn-svg {

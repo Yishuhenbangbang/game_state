@@ -10,16 +10,12 @@
               v-model="data.languagechange"
               placeholder="Select"
               size="large"
-              style="width: 36vw"
+              :style="{width:route.query.gameConsoleId === '1'? '36vw ': '100%'}"
               @focus="searchGame(1)"
           >
             <template #prefix>
                 <span class="select-icon">
-                 <svg data-v-1e6808da="" xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none"
-                      viewBox="0 0 24 24" stroke="currentColor"><path data-v-1e6808da="" stroke-linecap="round"
-                                                                      stroke-linejoin="round" stroke-width="2"
-                                                                      d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                 <img src="/image/language.png" alt="">
                 </span>
             </template>
             <el-option
@@ -30,7 +26,7 @@
             />
           </el-select>
         </div>
-        <div class="select-item">
+        <div class="select-item" v-if="route.query.gameConsoleId === '1'">
           <el-select
               v-model="data.gameType"
               placeholder="Select"
@@ -40,13 +36,7 @@
           >
             <template #prefix>
                 <span class="select-icon">
-                <svg data-v-1e6808da="" xmlns="http://www.w3.org/2000/svg"
-                     class="h-5 w-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none"
-                     viewBox="0 0 24 24" stroke="currentColor"><path data-v-1e6808da="" stroke-linecap="round"
-                                                                     stroke-linejoin="round" stroke-width="2"
-                                                                     d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path
-                    data-v-1e6808da="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <img src="/image/video.png" alt="">
                 </span>
             </template>
             <el-option
@@ -62,11 +52,7 @@
         <el-input v-model="data.gameName" placeholder="搜索游戏名称..." @focus="searchGame(3)">
           <template #prefix>
                 <span class="select-icon">
-               <svg data-v-1e6808da="" xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor"><path data-v-1e6808da="" stroke-linecap="round"
-                                                                    stroke-linejoin="round" stroke-width="2"
-                                                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+               <img src="/image/search.png" alt="">
                 </span>
           </template>
         </el-input>
@@ -74,11 +60,7 @@
       <div class="total">
         <div class="total-text">
           <span class="p-icon">
-            <svg data-v-1e6808da="" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor">
-            <path data-v-1e6808da="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-          </svg>
+            <img src="/image/mark-o.png" alt="">
           </span>
           <p>已选择: <span>{{ sure_game_list.length }}</span>款游戏</p>
         </div>
@@ -98,7 +80,8 @@
         <div class="game_card" @click="addList(index,item.check,item)" v-for="(item,index) in game_list_show"
              :key="item.id">
           <div class="card_img">
-            <img v-lazy="`./image/id_${item.id}.jpg`" alt="">
+            <img v-if="route.query.gameConsoleId === '1'" v-lazy="`./image/id_${item.id}.jpg`" alt="">
+            <img v-if="route.query.gameConsoleId === '2'" v-lazy="`./ps5Image/PS5_id_${item.id}.jpg`" alt="">
           </div>
           <div class="card_info">
             <div class="info_title">
@@ -106,7 +89,7 @@
               <span class="name">{{ item.name }}</span>
             </div>
             <div class="info_type">
-              <span class="type">{{ item.type }}</span>
+              <span class="type" v-if="item.type">{{ item.type }}</span>
               <span class="memory">{{ item.memory }}GB</span>
               <span class="language">{{ item.language }}</span>
             </div>
@@ -140,7 +123,8 @@
 <script setup>
 import {onMounted, ref, reactive, watch, computed, onUnmounted} from "vue";
 import {CloseBold, Select} from "@element-plus/icons-vue";
-import gameList from '@/assets/json/gameList.json'
+import Ps4GameList from '@/assets/json/Ps4GameList.json'
+import Ps5GameList from '@/assets/json/Ps5GameList.json'
 import {ElMessage} from "element-plus";
 import {useRoute, useRouter} from 'vue-router';
 import surePopup from "./components/surePopup.vue"
@@ -578,21 +562,50 @@ const sureGame = () => {
 
 // 初始化
 const init = () => {
-  game_list_copy.value = gameList
-  game_list_show.value = gameList
-  listLength.value = game_list_copy.value.length
+  if (route.query.gameConsoleId === '2') {
+    game_list_copy.value = Ps5GameList
+    game_list_show.value = Ps5GameList
+    listLength.value = game_list_copy.value.length
+  } else {
+    game_list_copy.value = Ps4GameList
+    game_list_show.value = Ps4GameList
+    listLength.value = game_list_copy.value.length
+  }
 }
 
 onMounted(() => {
-  if (route.query.id == null) {
-    router.push({name: 'Home'})
+  if (route.query.memoryId == null) {
+    router.push({name: 'memoryPage'})
+    return;
+  }
+
+  if (route.query.gameConsoleId == null) {
+    router.push({name: 'HostSelection'})
+    return;
+  }
+
+  if (route.query.gameConsoleId === '2') {
+    // ps5
+    // 825G = 400
+    // 1T = 800
+    // 2T = 1700
+    switch (route.query.memoryId) {
+      case '1':
+        hard_disk_data.total = 800
+        hard_disk_data.remaining = 800
+        break;
+      case '2':
+        hard_disk_data.total = 1700
+        hard_disk_data.remaining = 1700
+        break;
+    }
   } else {
     // 500G = 380
     // 1T = 780
     // 2T = 1.65 = 1689.6
     // 4T = 3.5 = 3584
     // 8T = 7.5 = 7680
-    switch (route.query.id) {
+    switch (route.query.memoryId) {
       case '1':
         hard_disk_data.total = 380
         hard_disk_data.remaining = 380
@@ -610,28 +623,40 @@ onMounted(() => {
         hard_disk_data.remaining = 3584
         break;
       case '5':
-        hard_disk_data.total = 4634
-        hard_disk_data.remaining = 4634
+        hard_disk_data.total = 7200
+        hard_disk_data.remaining = 7200
         break;
       case '6':
-        hard_disk_data.total = 8460
-        hard_disk_data.remaining = 8460
+        hard_disk_data.total = 4000
+        hard_disk_data.remaining = 4000
         break;
       case '7':
-        hard_disk_data.total = 5273.6
-        hard_disk_data.remaining = 5273.6
+        hard_disk_data.total = 8400
+        hard_disk_data.remaining = 8400
         break;
       case '8':
-        hard_disk_data.total = 9369.6
-        hard_disk_data.remaining = 9369.6
+        hard_disk_data.total = 5200
+        hard_disk_data.remaining = 5200
         break;
       case '9':
-        hard_disk_data.total = 3964
-        hard_disk_data.remaining = 3964
+        hard_disk_data.total = 9300
+        hard_disk_data.remaining = 9300
         break;
       case '10':
-        hard_disk_data.total = 8060
-        hard_disk_data.remaining = 8060
+        hard_disk_data.total = 3900
+        hard_disk_data.remaining = 3900
+        break;
+      case '11':
+        hard_disk_data.total = 7580
+        hard_disk_data.remaining = 7580
+        break;
+      case '12':
+        hard_disk_data.total = 400
+        hard_disk_data.remaining = 400
+        break;
+      case '13':
+        hard_disk_data.total = 600
+        hard_disk_data.remaining = 600
         break;
     }
   }
@@ -701,11 +726,19 @@ onUnmounted(() => {
     .select-group {
       display: flex;
       justify-content: space-between;
+
+      .select-item:nth-child(1) {
+        flex: 1;
+      }
     }
 
     .select-icon {
       width: 1.5vw;
       display: flex;
+
+      img {
+        width: 100%;
+      }
     }
 
     .total {
@@ -721,6 +754,10 @@ onUnmounted(() => {
           display: flex;
           width: 2vw;
           color: #409eff;
+
+          img {
+            width: 100%;
+          }
         }
 
         p {
@@ -826,11 +863,12 @@ onUnmounted(() => {
 
             .type {
               color: #9CA3AF;
+              margin-right: 6px;
             }
 
             .memory {
               color: #4ade80;
-              margin: 0 6px;
+              margin-right: 6px;
             }
 
             .language {
@@ -923,12 +961,12 @@ onUnmounted(() => {
 
   .operate {
     .select-icon {
-      width: 3vw !important;
+      width: 5vw !important;
     }
   }
 
   .p-icon {
-    width: 3vw !important;
+    width: 5vw !important;
   }
 }
 </style>

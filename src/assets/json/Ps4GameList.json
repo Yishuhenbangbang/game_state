@@ -234,14 +234,6 @@
   {
     "id": 30,
     "language": "中文",
-    "memory": 10,
-    "name": "刺客信条黑旗",
-    "type": "动作/冒险",
-    "check": false
-  },
-  {
-    "id": 31,
-    "language": "中文",
     "memory": 12,
     "name": "刺客信条 叛变 重置",
     "type": "动作/冒险",
@@ -354,33 +346,33 @@
   {
     "id": 45,
     "language": "中文",
-    "memory": 34,
-    "name": "FIFA2018",
-    "type": "体育/竞技",
+    "memory": 0.42,
+    "name": "闪速神机",
+    "type": "",
     "check": false
   },
   {
     "id": 46,
     "language": "中文",
-    "memory": 33,
-    "name": "FIFA2019",
-    "type": "体育/竞技",
+    "memory": 16.1,
+    "name": "索尼克力量",
+    "type": "",
     "check": false
   },
   {
     "id": 47,
     "language": "中文",
-    "memory": 36,
-    "name": "FIFA2020",
-    "type": "体育/竞技",
+    "memory": 14.6,
+    "name": "赏金奇兵3",
+    "type": "",
     "check": false
   },
   {
     "id": 48,
     "language": "中文",
-    "memory": 38,
-    "name": "FIFA2021",
-    "type": "体育/竞技",
+    "memory": 1.08,
+    "name": "永不觉醒：少女的噩梦",
+    "type": "",
     "check": false
   },
   {
@@ -803,7 +795,7 @@
     "id": 101,
     "language": "中文",
     "memory": 19,
-    "name": "海贼王：寻秘世界",
+    "name": "海贼王：寻秘世界豪华版",
     "type": "动作/冒险",
     "check": false
   },
@@ -1251,7 +1243,7 @@
     "id": 157,
     "language": "中文",
     "memory": 20,
-    "name": "极速俱乐部：无限2",
+    "name": "极速俱乐部：无限2终极版",
     "type": "赛车/竞速",
     "check": false
   },
@@ -1875,7 +1867,7 @@
     "id": 235,
     "language": "中文",
     "memory": 55,
-    "name": "ELEX2核心元素",
+    "name": "ELEX2核心元素2",
     "type": "角色扮演",
     "check": false
   },
@@ -1899,7 +1891,7 @@
     "id": 238,
     "language": "中文",
     "memory": 1,
-    "name": "恶魔城",
+    "name": "恶魔城高级合集",
     "type": "动作/冒险",
     "check": false
   },
@@ -2747,7 +2739,7 @@
     "id": 344,
     "language": "中文",
     "memory": 45,
-    "name": "仁王",
+    "name": "仁王1年度版",
     "type": "动作/角色扮演",
     "check": false
   },
@@ -2851,7 +2843,7 @@
     "id": 357,
     "language": "中文",
     "memory": 22,
-    "name": "尼尔人工生",
+    "name": "尼尔人工生命",
     "type": "动作/冒险",
     "check": false
   },
@@ -2880,14 +2872,6 @@
     "check": false
   },
   {
-    "id": 361,
-    "language": "中文",
-    "memory": 35,
-    "name": "麻布仔大冒险",
-    "type": "益智/冒险",
-    "check": false
-  },
-  {
     "id": 362,
     "language": "中文",
     "memory": 9,
@@ -2909,62 +2893,6 @@
     "memory": 30,
     "name": "女神异闻录5皇家版",
     "type": "角色扮演",
-    "check": false
-  },
-  {
-    "id": 365,
-    "language": "中文",
-    "memory": 13,
-    "name": "女神异闻录5乱战：魅影攻手",
-    "type": "角色扮演",
-    "check": false
-  },
-  {
-    "id": 366,
-    "language": "中文",
-    "memory": 9,
-    "name": "女神异闻录5舞动星夜",
-    "type": "角色扮演",
-    "check": false
-  },
-  {
-    "id": 367,
-    "language": "中文",
-    "memory": 0.6,
-    "name": "芸都恩仇录",
-    "type": "恶魔城类",
-    "check": false
-  },
-  {
-    "id": 368,
-    "language": "中文",
-    "memory": 1.7,
-    "name": "摇滚之神",
-    "type": "格斗音游",
-    "check": false
-  },
-  {
-    "id": 369,
-    "language": "中文",
-    "memory": 5.5,
-    "name": "托托莉的炼金工房~亚兰德之炼金术士2",
-    "type": "角色扮演",
-    "check": false
-  },
-  {
-    "id": 370,
-    "language": "中文",
-    "memory": 7.8,
-    "name": "圣兽之王",
-    "type": "角色扮演",
-    "check": false
-  },
-  {
-    "id": 371,
-    "language": "中文",
-    "memory": 1.3,
-    "name": "瑞思和夏恩",
-    "type": "2D横版动作射击",
     "check": false
   },
   {
@@ -3075,7 +3003,7 @@
     "id": 385,
     "language": "中文",
     "memory": 35,
-    "name": "涅克罗蒙达：赏金猎人",
+    "name": "涅克罗蒙达：赏金猎人黄金版",
     "type": "动作/射击",
     "check": false
   },
@@ -3083,7 +3011,7 @@
     "id": 386,
     "language": "中文",
     "memory": 18,
-    "name": "涅克罗蒙达：下巢战争",
+    "name": "涅克罗蒙达：下巢战争黄金版",
     "type": "动作/射击",
     "check": false
   },
@@ -3194,17 +3122,17 @@
   {
     "id": 400,
     "language": "中文",
-    "memory": 7,
-    "name": "你的日记",
-    "type": "恋爱/冒险",
+    "memory": 1,
+    "name": "尼可梦 灭绝",
+    "type": "捕捉/收集",
     "check": false
   },
   {
     "id": 401,
     "language": "中文",
-    "memory": 1,
-    "name": "尼可梦 灭绝",
-    "type": "捕捉/收集",
+    "memory": 7,
+    "name": "你的日记",
+    "type": "恋爱/冒险",
     "check": false
   },
   {
@@ -3347,7 +3275,7 @@
     "id": 419,
     "language": "英文",
     "memory": 30,
-    "name": "使命召唤10",
+    "name": "使命召唤10:幽灵数字-增强版",
     "type": "射击",
     "check": false
   },
@@ -3539,7 +3467,7 @@
     "id": 443,
     "language": "中文",
     "memory": 35,
-    "name": "声名狼藉 次子",
+    "name": "声名狼藉 次子 破晓",
     "type": "动作",
     "check": false
   },
@@ -3563,7 +3491,7 @@
     "id": 446,
     "language": "中文",
     "memory": 17,
-    "name": "噬神者4",
+    "name": "噬神者3",
     "type": "动作",
     "check": false
   },
@@ -3619,7 +3547,7 @@
     "id": 453,
     "language": "中文",
     "memory": 18,
-    "name": "死亡岛2",
+    "name": "死亡岛2黄金版",
     "type": "动作/冒险",
     "check": false
   },
@@ -4379,7 +4307,7 @@
     "id": 548,
     "language": "中文",
     "memory": 7.6,
-    "name": "特拉维斯再出击：英雄不",
+    "name": "特拉维斯再出击：英雄不在",
     "type": "动作",
     "check": false
   },
@@ -4491,7 +4419,7 @@
     "id": 562,
     "language": "中文",
     "memory": 28,
-    "name": "巴斯蒂安拉力赛-进化",
+    "name": "赛巴斯蒂安拉力赛-进化",
     "type": "竞速",
     "check": false
   },
@@ -4499,7 +4427,7 @@
     "id": 563,
     "language": "中文",
     "memory": 0.3,
-    "name": "三角符文 ",
+    "name": "三角符文 第1+2章 ",
     "type": "像素闯关",
     "check": false
   },
@@ -4563,7 +4491,7 @@
     "id": 571,
     "language": "中文",
     "memory": 18.4,
-    "name": "神界：原罪2",
+    "name": "神界：原罪2终极版",
     "type": "角色扮演",
     "check": false
   },
@@ -5507,7 +5435,7 @@
     "id": 689,
     "language": "中文",
     "memory": 11.3,
-    "name": "战国BASARA",
+    "name": "战国BASARA：真田幸村传",
     "type": "动作/角色扮演",
     "check": false
   },
@@ -5555,7 +5483,7 @@
     "id": 695,
     "language": "中文",
     "memory": 0.58,
-    "name": "战鼓啪打碰",
+    "name": "战鼓啪打碰重置版",
     "type": "模拟",
     "check": false
   },
@@ -5571,7 +5499,7 @@
     "id": 697,
     "language": "中文",
     "memory": 1.2,
-    "name": "这是警察1",
+    "name": "这是警察2",
     "type": "模拟/经营",
     "check": false
   },
@@ -5579,7 +5507,7 @@
     "id": 698,
     "language": "中文",
     "memory": 2.6,
-    "name": "这是警察2",
+    "name": "这是警察1",
     "type": "模拟/经营",
     "check": false
   },
@@ -5587,7 +5515,7 @@
     "id": 699,
     "language": "中文",
     "memory": 8,
-    "name": "真・女神转生3",
+    "name": "真・女神转生3夜曲",
     "type": "角色扮演",
     "check": false
   },
@@ -5659,7 +5587,7 @@
     "id": 708,
     "language": "中文",
     "memory": 1.5,
-    "name": "重装机兵Xeno：重生",
+    "name": "重装机兵Xeno",
     "type": "角色扮演",
     "check": false
   },
@@ -5819,7 +5747,7 @@
     "id": 728,
     "language": "中文",
     "memory": 58,
-    "name": "正当防卫4",
+    "name": "正当防卫4黄金版",
     "type": "第三人称射击",
     "check": false
   },
@@ -5915,7 +5843,7 @@
     "id": 740,
     "language": "中文",
     "memory": 9.76,
-    "name": "重力异想世界 1",
+    "name": "重力异想世界1重置版",
     "type": "动作/冒险",
     "check": false
   },
@@ -6515,7 +6443,7 @@
     "id": 815,
     "language": "中文",
     "memory": 1,
-    "name": "幻想新国度3 ",
+    "name": "幻想新国度3 水晶巨石",
     "type": "冒险/休闲",
     "check": false
   },
@@ -7043,7 +6971,7 @@
     "id": 881,
     "language": "中文",
     "memory": 6,
-    "name": "铁甲飞龙",
+    "name": "铁甲飞龙重置版",
     "type": "空战/冒险",
     "check": false
   },
@@ -7123,7 +7051,7 @@
     "id": 891,
     "language": "中文",
     "memory": 11,
-    "name": "超酷节拍：音速加",
+    "name": "超酷节拍：音速加强版",
     "type": "音乐节奏",
     "check": false
   },
@@ -8555,7 +8483,7 @@
     "id": 1070,
     "language": "中文",
     "memory": 2.4,
-    "name": "像素垃圾怪兽",
+    "name": "像素垃圾怪兽2",
     "type": "策略/塔防",
     "check": false
   },
@@ -8843,7 +8771,7 @@
     "id": 1106,
     "language": "中文",
     "memory": 4.3,
-    "name": "刑罚",
+    "name": "刑罚加长版",
     "type": "恐怖/第一人称",
     "check": false
   },
@@ -9091,7 +9019,7 @@
     "id": 1137,
     "language": "中文",
     "memory": 23.6,
-    "name": "勇者斗恶龙英雄",
+    "name": "勇者斗恶龙英雄2",
     "type": "动作",
     "check": false
   },
@@ -10618,16 +10546,16 @@
   {
     "id": 1328,
     "language": "中文",
-    "memory": 10.6,
-    "name": "战神1",
+    "memory": 12,
+    "name": "战神2",
     "type": "动作/冒险",
     "check": false
   },
   {
     "id": 1329,
     "language": "中文",
-    "memory": 12,
-    "name": "战神2",
+    "memory": 10.6,
+    "name": "战神1",
     "type": "动作/冒险",
     "check": false
   },
@@ -10637,6 +10565,446 @@
     "memory": 4.3,
     "name": "寂静岭tp",
     "type": "恐怖",
+    "check": false
+  },
+  {
+    "id": 1331,
+    "language": "中文",
+    "memory": 28.2,
+    "name": "卧龙",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1332,
+    "language": "中文",
+    "memory": 8.83,
+    "name": "衹:女神之路",
+    "type": "动作/策略",
+    "check": false
+  },
+  {
+    "id": 1333,
+    "language": "中文",
+    "memory": 13.5,
+    "name": "艾尔登法环黑夜君临",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1334,
+    "language": "中文",
+    "memory": 6.42,
+    "name": "女鬼桥2",
+    "type": "恐怖冒险",
+    "check": false
+  },
+  {
+    "id": 1335,
+    "language": "中文",
+    "memory": 40.9,
+    "name": "饿狼传说群狼之城",
+    "type": "格斗",
+    "check": false
+  },
+  {
+    "id": 1336,
+    "language": "中文",
+    "memory": 21.3,
+    "name": "星球大战前线合集",
+    "type": "第一人称/第三人称射击",
+    "check": false
+  },
+  {
+    "id": 1337,
+    "language": "中文",
+    "memory": 7.15,
+    "name": "古墓丽影456重置版",
+    "type": "动作冒险",
+    "check": false
+  },
+  {
+    "id": 1338,
+    "language": "中文",
+    "memory": 4.57,
+    "name": "禁闭求生",
+    "type": "生存/沙盒冒险",
+    "check": false
+  },
+  {
+    "id": 1339,
+    "language": "中文",
+    "memory": 3.65,
+    "name": "真三国无双4猛将传",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1340,
+    "language": "中文",
+    "memory": 3.94,
+    "name": "真三国无双5特别版",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1341,
+    "language": "中文",
+    "memory": 7.25,
+    "name": "格兰蒂亚+格兰蒂亚Ⅱ:高清合集",
+    "type": "角色扮演",
+    "check": false
+  },
+  {
+    "id": 1342,
+    "language": "中文",
+    "memory": 22.7,
+    "name": "野狗子",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1343,
+    "language": "中文",
+    "memory": 1.92,
+    "name": "噗哟噗哟:俄罗斯方块2",
+    "type": "益智",
+    "check": false
+  },
+  {
+    "id": 1344,
+    "language": "中文",
+    "memory": 0.89,
+    "name": "毁灭战士+毁灭战士2",
+    "type": "第一人称射击",
+    "check": false
+  },
+  {
+    "id": 1345,
+    "language": "中文",
+    "memory": 3.1,
+    "name": "终焉之玛格诺利亚:雾中之花",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1346,
+    "language": "中文",
+    "memory": 1.36,
+    "name": "空洞骑士虚空之心版",
+    "type": "",
+    "check": false
+  },
+  {
+    "id": 1347,
+    "language": "中文",
+    "memory": 3.34,
+    "name": "寄梦远方",
+    "type": "步行模拟/冒险",
+    "check": false
+  },
+  {
+    "id": 1348,
+    "language": "中文",
+    "memory": 3.68,
+    "name": "暗影诅咒:Hella地狱-重制版",
+    "type": "动作/第三人称射击",
+    "check": false
+  },
+  {
+    "id": 1349,
+    "language": "中文",
+    "memory": 19.2,
+    "name": "鬼武者2:武士的命运-重制版",
+    "type": "动作/冒险",
+    "check": false
+  },
+  {
+    "id": 1350,
+    "language": "中文",
+    "memory": 0.61,
+    "name": "Memorrha",
+    "type": "解谜/冒险",
+    "check": false
+  },
+  {
+    "id": 1351,
+    "language": "中文",
+    "memory": 8.43,
+    "name": "电锯糖:重制版",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1352,
+    "language": "中文",
+    "memory": 1.3,
+    "name": "棉花小魔女幻想乡",
+    "type": "射击",
+    "check": false
+  },
+  {
+    "id": 1353,
+    "language": "中文",
+    "memory": 4.13,
+    "name": "地球上最后的孩子与毁灭之杖",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1354,
+    "language": "中文",
+    "memory": 14.3,
+    "name": "真三国无双 英杰传",
+    "type": "策略/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1355,
+    "language": "中文",
+    "memory": 1.06,
+    "name": "真三国无双2",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1356,
+    "language": "中文",
+    "memory": 3.12,
+    "name": "真三国无双3猛将传",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1357,
+    "language": "中文",
+    "memory": 1.54,
+    "name": "战鼓啪打碰3:加强版",
+    "type": "节奏/动作策略",
+    "check": false
+  },
+  {
+    "id": 1358,
+    "language": "中文",
+    "memory": 28.5,
+    "name": "死魂曲2024版",
+    "type": "生存恐怖",
+    "check": false
+  },
+  {
+    "id": 1359,
+    "language": "中文",
+    "memory": 6.71,
+    "name": "凯恩的选产:噬魂者",
+    "type": "动作冒险",
+    "check": false
+  },
+  {
+    "id": 1360,
+    "language": "中文",
+    "memory": 7.8,
+    "name": "不朽国度:血族战争",
+    "type": "策略/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1361,
+    "language": "中文",
+    "memory": 7.8,
+    "name": "狙击精英:抵抗-豪华版.",
+    "type": "战术射击/潜行",
+    "check": false
+  },
+  {
+    "id": 1362,
+    "language": "中文",
+    "memory": 17.4,
+    "name": "绝体绝命都市4 Plus",
+    "type": "生存/冒险",
+    "check": false
+  },
+  {
+    "id": 1363,
+    "language": "中文",
+    "memory": 39.6,
+    "name": "机动战士高达:激战任务",
+    "type": "射击/机甲动作",
+    "check": false
+  },
+  {
+    "id": 1364,
+    "language": "中文",
+    "memory": 8.79,
+    "name": "阿喀玩斯:传说未竟之谜",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1365,
+    "language": "中文",
+    "memory": 4.55,
+    "name": "驶向天际2",
+    "type": "竞速",
+    "check": false
+  },
+  {
+    "id": 1366,
+    "language": "中文",
+    "memory": 0.36,
+    "name": "吸血鬼幸存者",
+    "type": "生存/动作",
+    "check": false
+  },
+  {
+    "id": 1367,
+    "language": "中文",
+    "memory": 15.7,
+    "name": "万叶雷道 复刻版",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1368,
+    "language": "中文",
+    "memory": 24.3,
+    "name": "绯红结系:终极版",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1369,
+    "language": "中文",
+    "memory": 0.46,
+    "name": "疯狂高楼大亨",
+    "type": "模拟经营",
+    "check": false
+  },
+  {
+    "id": 1370,
+    "language": "中文",
+    "memory": 12.9,
+    "name": "上行战场",
+    "type": "动作/角色扮演",
+    "check": false
+  },
+  {
+    "id": 1371,
+    "language": "中文",
+    "memory": 60.5,
+    "name": "FC26",
+    "type": "体育",
+    "check": false
+  },
+  {
+    "id": 1372,
+    "language": "中文",
+    "memory": 16.6,
+    "name": "实况足球2015",
+    "type": "体育",
+    "check": false
+  },
+  {
+    "id": 1373,
+    "language": "中文",
+    "memory": 45.1,
+    "name": "NBA2K26",
+    "type": "体育",
+    "check": false
+  },
+  {
+    "id": 1374,
+    "language": "中文",
+    "memory": 0.002,
+    "name": "猎人荒野的召唤",
+    "type": "模拟狩猎/射击",
+    "check": false
+  },
+  {
+    "id": 1375,
+    "language": "中文",
+    "memory": 0.97,
+    "name": "蛋糕大作战",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1376,
+    "language": "中文",
+    "memory": 1.29,
+    "name": "奥特曼格斗进化:重生",
+    "type": "格斗",
+    "check": false
+  },
+  {
+    "id": 1377,
+    "language": "中文",
+    "memory": 2.26,
+    "name": "奥特曼格斗进化3",
+    "type": "格斗",
+    "check": false
+  },
+  {
+    "id": 1378,
+    "language": "中文",
+    "memory": 0.55,
+    "name": "捣蛋鹅",
+    "type": "解谜/冒险",
+    "check": false
+  },
+  {
+    "id": 1379,
+    "language": "中文",
+    "memory": 4.63,
+    "name": "疯狂的兔子",
+    "type": "动作",
+    "check": false
+  },
+  {
+    "id": 1380,
+    "language": "中文",
+    "memory": 16.0,
+    "name": "孽杀圆形1+2合集",
+    "type": "射击",
+    "check": false
+  },
+  {
+    "id": 1381,
+    "language": "中文",
+    "memory": 8.82,
+    "name": "孽杀圆形",
+    "type": "射击",
+    "check": false
+  },
+  {
+    "id": 1382,
+    "language": "中文",
+    "memory": 36.4,
+    "name": "FIFA21",
+    "type": "体育",
+    "check": false
+  },
+  {
+    "id": 1383,
+    "language": "中文",
+    "memory": 36.2,
+    "name": "FIFA18",
+    "type": "体育",
+    "check": false
+  },
+  {
+    "id": 1384,
+    "language": "中文",
+    "memory": 35.7,
+    "name": "FIFA20",
+    "type": "体育",
+    "check": false
+  },
+  {
+    "id": 1385,
+    "language": "中文",
+    "memory": 37.8,
+    "name": "FIFA19",
+    "type": "体育",
     "check": false
   }
 ]

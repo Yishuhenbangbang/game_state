@@ -1,12 +1,18 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '@/page/Home/home.vue'
+import MemoryPage from '@/page/memoryPage/index.vue'
 import SelectGame from "@/page/selectGame/selectGame.vue";
+import HostSelection from "@/page/hostSelection/index.vue"
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'HostSelection',
+    component: HostSelection
+  },
+  {
+    path: '/memoryPage',
+    name: 'MemoryPage',
+    component: MemoryPage
   },
   {
     path: '/select_game',
